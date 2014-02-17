@@ -148,9 +148,9 @@ JQUERY_URL = 'jquery.min.js' # default is http://ajax.googleapis.com/ajax/libs/j
 STATIC_ROOT = normpath(join(SITE_ROOT, 'staticfiles'))
 # URL prefix for static files.
 # Example: "http://example.com/static/", "http://static.example.com/"
-STATIC_URL = S3_URL
+#STATIC_URL = S3_URL
 
-#STATIC_URL = '/static/'
+STATIC_URL = '/static/'
 # Absolute filesystem path to the directory that will hold user-uploaded files.
 MEDIA_ROOT = normpath(join(SITE_ROOT, 'media'))
 # URL that handles the media served from MEDIA_ROOT. Make sure to use a trailing slash.
