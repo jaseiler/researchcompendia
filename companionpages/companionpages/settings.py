@@ -148,17 +148,19 @@ JQUERY_URL = None # we include jquery manually in base.html template
 STATIC_ROOT = normpath(join(SITE_ROOT, 'staticfiles'))
 # URL prefix for static files.
 # Example: "http://example.com/static/", "http://static.example.com/"
-<<<<<<< HEAD
 if STATICFILES_STORAGE == 'storages.backends.s3boto.S3BotoStorage':
     STATIC_URL = S3_URL
 else:
     STATIC_URL = '/static/'
 
+<<<<<<< HEAD
 =======
 #STATIC_URL = S3_URL
 
 STATIC_URL = '/static/'
 >>>>>>> legible css
+=======
+>>>>>>> settings
 # Absolute filesystem path to the directory that will hold user-uploaded files.
 MEDIA_ROOT = normpath(join(SITE_ROOT, 'media'))
 # URL that handles the media served from MEDIA_ROOT. Make sure to use a trailing slash.
