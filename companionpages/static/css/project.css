@@ -32,3 +32,27 @@ body {
 .rc-jumbotron h1 {
   font-size: 42px;
 }
+
+.bs-sidebar {
+    float: left;
+    width: 220px;
+    padding:20px 20px 15px 20px;
+    display: inline;
+    position:fixed;
+}
+
+.col-lg-cont {
+	float: left;
+	width: 66.6666%;
+	display: block;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+.col-lg-side {
+	float: left;
+	width: 16.6667%;
+	display: block;
+	padding-right: 15px; 
+	padding-left: 15px;
+}

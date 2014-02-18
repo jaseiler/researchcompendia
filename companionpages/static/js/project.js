@@ -12,3 +12,9 @@ $('.panel').on("shown.bs.collapse", function(e) {
   $icon.removeClass("icon-minus-sign-alt")
   $icon.addClass("icon-plus-sign-alt")
 });
+$(window).resize(function() {
+    $(".col-lg-side").css("width",220);
+    $(".col-lg-cont").css("width",$("body").width()-570);
+    
+    });
+$(".col-lg-cont").css("width",$("body").width()-570); 
