@@ -12,9 +12,7 @@ $('.panel').on("shown.bs.collapse", function(e) {
   $icon.removeClass("icon-minus-sign-alt")
   $icon.addClass("icon-plus-sign-alt")
 });
-$(window).resize(function() {
-    $(".col-lg-side").css("width",220);
-    $(".col-lg-cont").css("width",$("body").width()-570);
-    
-    });
-$(".col-lg-cont").css("width",$("body").width()-570); 
+sidebarwidth = $("ul.nav").width()-90; //css('width');
+$('.bs-sidebar').css('width', sidebarwidth);
+contentmargin = parseInt(sidebarwidth) + 60;
+$('.span-fixed-sidebar').css('marginLeft', sidebarwidth+'px');

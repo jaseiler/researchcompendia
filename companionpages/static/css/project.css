@@ -33,26 +33,37 @@ body {
   font-size: 42px;
 }
 
+
+@media (min-width: 992px) {
 .bs-sidebar {
     float: left;
-    width: 220px;
+    width: auto;
     padding:20px 20px 15px 20px;
     display: inline;
     position:fixed;
 }
 
-.col-lg-cont {
-	float: left;
-	width: 66.6666%;
-	display: block;
-	padding-right: 15px;
-	padding-left: 15px;
+.sidebar-nav-fixed {
+     position:fixed;
+     top:60px;
+     width:21.97%;
+ }
 }
 
-.col-lg-side {
-	float: left;
-	width: 16.6667%;
-	display: block;
-	padding-right: 15px; 
-	padding-left: 15px;
+ @media (max-width: 767px) {
+     .sidebar-nav-fixed {
+         width:auto;
+     }
+ }
+
+
+@media (max-width: 979px) {
+     .sidebar-nav-fixed {
+        position:static;
+        width: auto;
+     }
+
+}
+.span-fixed-sidebar {
+margin-left:220px;
 }
